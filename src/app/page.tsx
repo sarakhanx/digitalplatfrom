@@ -40,7 +40,7 @@ export default function Home() {
       <ProductReel
       title="Browse the Flowers"
       href="/products"
-      query={{sort:'desc',limit:4}}
+      query={{sort:'desc',limit:4 ,category:'best-seller'}}
       />
     </MaxWidthWrapper>
     <section className='border-t border-grey-200 bg-grey-100'>

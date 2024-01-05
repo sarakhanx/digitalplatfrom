@@ -6,6 +6,7 @@ import Link from "next/link"
 import { Product } from "../payload-types"
 import ProductListing from "./ProductListing"
 
+
 interface ProductReelProps {
     title: string
     subtitle?: string
@@ -25,7 +26,9 @@ const ProductReel = (props : ProductReelProps) => {
         getNextPageParam : (lastPage)=>lastPage.nextPage,
     }
     )
-    const products = queryResulsts?.pages.flatMap((page)=>page.items)
+    let products = queryResulsts?.pages.flatMap((page)=>page.items)
+
+    
 
     let map :(Product | null)[] = []
     if(products && products.length) {
@@ -33,6 +36,7 @@ const ProductReel = (props : ProductReelProps) => {
     }else if(isLoading) {
         map = new Array <null> (query.limit ?? FALLBACK_LIMIT).fill(null)
     }
+    
 
     return (
         <section className='py-12'>

@@ -28,7 +28,7 @@ const ProductsPage = ({
         title={label ?? 'Our Products'}
         query={{
           category,
-          limit: 40,
+          limit: 100,
           sort:
             sort === 'desc' || sort === 'asc'
               ? sort
