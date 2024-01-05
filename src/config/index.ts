@@ -5,17 +5,17 @@ export const PRODUCT_CATTEGORIES = [
     featured: [
       {
         name: "editor-picker",
-        href: "#",
+        href: "/products?category=winter-beach-yee-haa",
         imageSrc: "/nav/ui-kits/bike-girls-flower-02.png",
       },
       {
         name: "2024 Promotions",
-        href: "#",
+        href: "/products?category=winter-beach-yee-haa",
         imageSrc: "/nav/ui-kits/bike-girls-flower.png",
       },
       {
         name: "Queen Production",
-        href: "#",
+        href: "/products?category=winter-beach-yee-haa",
         imageSrc: "/nav/ui-kits/winter-queen.png",
       },
     ],
@@ -26,17 +26,17 @@ export const PRODUCT_CATTEGORIES = [
     featured: [
       {
         name: "roses",
-        href: "#",
+        href: "/products?category=best-seller",
         imageSrc: "/nav/best-seller/bq-01.png",
       },
       {
         name: "roses2",
-        href: "#",
+        href: "/products?category=best-seller",
         imageSrc: "/nav/best-seller/bq-01.png",
       },
       {
         name: "roses3",
-        href: "#",
+        href: "/products?category=best-seller",
         imageSrc: "/nav/best-seller/bq-01.png",
       },
     ],

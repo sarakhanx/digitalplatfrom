@@ -86,7 +86,7 @@ await payload.update({
 // send receipt
 try {
     const data = await resend.emails.send({
-    from: 'DigitalHippo <hello@joshtriedcoding.com>',
+    from: 'winterglory <onboarding@resend.dev>', //change to custom dns later
     to: [user.email],
     subject: 'Thanks for your order! This is your receipt.',
     html: ReceiptEmailHtml({

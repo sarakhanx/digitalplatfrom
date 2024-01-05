@@ -38,7 +38,7 @@ export default function Home() {
         </div>
       </div>
       <ProductReel
-      title="FOO BAR"
+      title="Browse the Flowers"
       href="/products"
       query={{sort:'desc',limit:4}}
       />
