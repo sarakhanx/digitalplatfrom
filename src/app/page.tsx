@@ -27,22 +27,28 @@ export default function Home() {
   return (<>
   
     <MaxWidthWrapper>
+      <div className="hero">
       <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl ">
-        <h1 className="font-t text-4xl sm:text-6xl">
-          Winter Glory <br /><span className='tracking-tight'>flower pattaya</span>
+        <h1 className="font-t text-4xl sm:text-6xl text-gray-50 drop-shadow-md
+
+">
+          Winter Glory <br /><span className='tracking-tight '>flower pattaya</span>
         </h1>
-        <p className="text-sm md:text-lg mt-4 max-w-prose text-muted-foreground">Welcome to winter glory flower every happy can be happiler</p>
+        <p className="text-sm md:text-lg mt-4 max-w-prose drop-shadow-md  text-gray-100">Welcome to winter glory flower every happy can be happiler</p>
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
           <Link href='/products' className={buttonVariants({className:'hover:bg-green-50'})}>Browse Your Flower &rarr;</Link>
-          <Button variant='ghost'>Purpose &rarr;</Button>
+          <Button variant='ghost' className="text-gray-50 drop-shadow-md">Purpose &rarr;</Button>
         </div>
       </div>
+      </div>
       <ProductReel
-      title="Browse the Flowers"
+      title="Today Fresh flowers"
       href="/products"
       query={{sort:'desc',limit:4 ,category:'best-seller'}}
       />
+      
     </MaxWidthWrapper>
+    
     <section className='border-t border-grey-200 bg-grey-100'>
       <MaxWidthWrapper className='py-20'>
       <div className='grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0'>
@@ -67,6 +73,7 @@ export default function Home() {
       
       ))}
       </div>
+      
       </MaxWidthWrapper>
     </section>
   </>

@@ -99,3 +99,12 @@ font-style: normal;
   background: white !important;
   scale: 1 !important ;
 }
+.hero {
+  background-image: url('/hero01.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  width: 100%;
+  display: flex;
+}
