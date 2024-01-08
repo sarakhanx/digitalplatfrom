@@ -1,5 +1,6 @@
 import { User } from "../payload-types";
 import { Access, CollectionConfig } from "payload/types";
+import volumePath from "../lib/volumePath";
 
 const isAdminOrPermission = () : Access => async ({
     req
@@ -41,7 +42,7 @@ export const Media: CollectionConfig = {
   },
   
   upload: {
-    staticURL: "/media",
+    staticURL: volumePath('/media'),
     staticDir: "media",
     imageSizes: [
       { name: "thumnails", width: 400, height: 300, position: "centre" },
