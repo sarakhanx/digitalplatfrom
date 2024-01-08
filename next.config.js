@@ -4,6 +4,7 @@ const nextConfig = {
         domains : [
             'localhost',
             'winterglory.up.railway.app',
+            'flower-platform.onrender.com'
         ]
     }
 }

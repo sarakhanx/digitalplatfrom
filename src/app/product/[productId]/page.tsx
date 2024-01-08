@@ -144,6 +144,7 @@ const Page = async ({ params }: PageProps) => {
         title={`Similar ${label}`}
         subtitle={`Browse the ${label} collection just like '${label}'`}
       />
+      
     </MaxWidthWrapper>
   );
 };
