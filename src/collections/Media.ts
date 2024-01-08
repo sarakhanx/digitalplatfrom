@@ -42,7 +42,7 @@ export const Media: CollectionConfig = {
   },
   
   upload: {
-    staticURL: volumePath('/media'),
+    staticURL: "/media" && volumePath("media"),
     staticDir: "media",
     imageSizes: [
       { name: "thumnails", width: 400, height: 300, position: "centre" },
